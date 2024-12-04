@@ -1,0 +1,31 @@
+# OSINT Investigation 3
+**Date:** Mar 22, 2021, 09:06 PM
+**Hostname:** RichardPRD
+**Source IP:** 172.16.17.45
+**File Info:** 1word.doc
+**MD5 Hash:** 349d13ca99ab03869548d75b99e5a1d0
+**Device Action:** Cleaned
+
+## Summary
+On Mar 22, 2021, at 09:06 PM, a malicious file named 1word.doc (MD5: 349d13ca99ab03869548d75b99e5a1d0) was detected on RichardPRD (IP 172.16.17.45). The file was flagged as malicious by 48 out of 62 security vendors, 
+and the device action was marked as Cleaned. No additional logs or endpoint security activity was recorded. MITRE ATT&CK techniques were identified, indicating potential exploitation and execution attempts.
+
+## Artifacts
+| **IOC Type**    | **Value**                                                                |
+|------------------|---------------------------------------------------------------------------|
+| MD5 Hash         | 3e5f57ebff875d2e675f122348418057                                        |
+
+## MITRE ATT&CK Techniques
+| **MITRE Tactics**     | **MITRE Techniques**                                                |
+|-----------------------|----------------------------------------------------------------------|
+| Execution             | T1047: Windows Management Instrumentation, T1059: Command and Scripting Interpreter, T1059.001: PowerShell, T1059.005: Visual Basic, T1203: Exploitation for Client Execution    |
+| Privilege Escalation  | T1055: Process Injection      |
+| Defense Evasion       | T1036: Masquerading, T1140: Deobfuscate/Decode Files or Information, T1562: Impair Defenses, T1562.001: Disable or Modify Tools          |
+| Command and Control   | T1071: Application Layer Protocol, T1071.001: Web Protocols, T1095: Non-Application Layer Protocol, T1105: Ingress Tool Transfer         |
+
+## Recommendation
+Monitor the endpoint for further activity and ensure preventive measures such as blocking the associated MD5 hash. Investigate the origin of the file, validate if it was downloaded from an unauthorized source, 
+and take steps to block similar threats in the future.
+
+## Evidence
+VirusTotal Analysis of MD5 Hash
