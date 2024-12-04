@@ -4,7 +4,6 @@ Welcome to my cybersecurity portfolio! This repository highlights my investigati
 
 ## Sections
 - [OSINT Investigations](./OSINT-Investigations)
-- [SOC Practice](./SOC-Practice)
 
 ## Tools & Platforms
 - LetDefend.io
