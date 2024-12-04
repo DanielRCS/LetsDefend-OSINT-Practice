@@ -1,0 +1,31 @@
+# OSINT Investigation 2
+
+**Date:** Mar 21, 2021, 01:02 PM  
+**Hostname:** SusieHost  
+**Source IP:** 172.16.17.5  
+**Destination IP:** 51.195.68.163  
+**Destination Port:** 443  
+**Requested URL:** [https://www.win-rar[.]com/postdownload.html?&L=0&Version=32bit](https://www.win-rar.com/postdownload.html?&L=0&Version=32bit)  
+**MD5 Hash:** 3e5f57ebff875d2e675f122348418057  
+**Device Action:** Allowed  
+
+## Summary
+On Mar 21, 2021, at 01:02 PM, SusieHost (IP `172.16.17.5`) made an allowed GET request to the URL [https://www.win-rar[.]com/postdownload.html?&L=0&Version=32bit](https://www.win-rar.com/postdownload.html?&L=0&Version=32bit). The destination IP was `51.195.68.163` and the request contained an MD5 hash of `3e5f57ebff875d2e675f122348418057`.
+
+## Artifacts
+| **IOC Type**    | **Value**                                                                 |
+|------------------|---------------------------------------------------------------------------|
+| Hostname         | win-rar[.]com                                                           |
+| URL              | [https://www.win-rar[.]com/postdownload.html?&L=0&Version=32bit](https://www.win-rar.com/postdownload.html?&L=0&Version=32bit) |
+| Destination IP   | 51.195.68.163                                                           |
+| MD5 Hash         | 3e5f57ebff875d2e675f122348418057                                        |
+
+## What is WinRAR?
+WinRAR is a file archiver utility for compressing, extracting, and managing files in RAR and ZIP formats, widely used for reducing file size and organizing data.
+
+## Recommendation
+Continued monitoring of SusieHost (`172.16.17.5`) is recommended to ensure no further suspicious activity occurs. Overall, WinRAR is a legitimate program, consider checking if the file downloaded via the MD5 hash is legitimate or malicious.
+
+## Evidence
+- [VirusTotal Analysis of win-rar[.]com](https://www.virustotal.com/gui/domain/win-rar.com)
+- [AbuseIPDB Lookup for 51.195.68.163](https://www.abuseipdb.com/check/51.195.68.163)
